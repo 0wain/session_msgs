@@ -16,5 +16,5 @@ With a little Lua knowledge, you can easily change the strings to better suit yo
 
 ###### Disconnect
 ```
-[My Cool Server] Steve has disconnected to the server. Their SteamID was: STEAM_0:0:49148608
+[My Cool Server] Steve has disconnected from the server. Their SteamID was: STEAM_0:0:49148608
 ```
