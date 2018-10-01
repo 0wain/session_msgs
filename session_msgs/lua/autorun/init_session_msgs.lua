@@ -11,7 +11,6 @@ if SERVER then
 			net.WriteString(ply)
 		net.Broadcast()
 	end)
-
 	hook.Add("PlayerDisconnected", "IRP_DisconnectHook", function(ply)
 		net.Start("IRP_Disconnect")
 			net.WriteString(ply:Nick())
@@ -26,8 +25,7 @@ if CLIENT then
 	net.Receive("IRP_Connect", function()
 		local target = net.ReadString()
 		chat.AddText( ConNotifyConfig.PrefixColor, "["..ConNotifyConfig.Prefix.."] ", Color( 255, 255, 255 ), target.." has connected to the server." )
-	end)
-
+	end) 
 	net.Receive("IRP_Disconnect", function()
 		local target = net.ReadString()
 		local targetid = net.ReadString()
